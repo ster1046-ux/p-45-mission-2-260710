@@ -1,0 +1,17 @@
+public class Main {
+    static void main() {
+
+        int ea = 5;
+
+        for(int od = 1; od < 11; od++) {
+                if(ea - od >= 0) {
+                    System.out.println(od + "번 주문 성공, 남은 재고:" + (ea-od));
+                }
+                else if(ea - od < 0){
+                    System.out.println(od + "번 주문 실패, 재고 없음");
+                }
+
+
+            }
+        }
+    }
