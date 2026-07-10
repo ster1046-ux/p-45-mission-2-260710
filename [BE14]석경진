@@ -1,0 +1,30 @@
+// 1. 상품 재고 주문 처리를 구현
+public class Main {
+    static void main() {
+
+        int ea = 5;
+
+        for(int od = 1; od < 11; od++) {
+                if(ea - od >= 0) {
+                    System.out.println(od + "번 주문 성공, 남은 재고:" + (ea-od));
+                }
+                else if(ea - od < 0){
+                    System.out.println(od + "번 주문 실패, 재고 없음");
+                }
+
+
+            }
+        }
+    }
+
+// 2. 보충수업 구구단 강의 과제
+// 단을 홀수만, 곱은 짝수만 나오게 하기
+
+public class Main {
+    static void main() {
+        for(int dan = 1; 2*dan+1 < 10; dan++)
+            for(int gob = 1; 2*gob < 10; gob++) {
+                System.out.println(2 * dan + 1 + "X" + 2 * gob + "=" + (2 * dan + 1) * (2 * gob));
+            }
+    }
+}
