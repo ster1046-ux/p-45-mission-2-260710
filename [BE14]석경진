@@ -22,9 +22,11 @@ public class Main {
 
 public class Main {
     static void main() {
-        for(int dan = 1; 2*dan+1 < 10; dan++)
-            for(int gob = 1; 2*gob < 10; gob++) {
-                System.out.println(2 * dan + 1 + "X" + 2 * gob + "=" + (2 * dan + 1) * (2 * gob));
-            }
+        for(int dan = 2; dan < 10; dan++)
+            for(int gob = 1; gob < 10; gob++) {
+                if(dan % 2 == 1 && gob % 2 == 0)
+                    System.out.println(dan + "X" + gob + "=" + dan*gob );
+
+                }
     }
 }
